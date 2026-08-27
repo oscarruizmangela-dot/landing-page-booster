@@ -77,14 +77,11 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Pragma — Meeting & Email Simulators" },
-      { name: "description", content: "Rehearse high-stakes meetings and difficult emails in a controlled simulator. Build confidence before the real conversation." },
-      { name: "author", content: "Pragma" },
-      { property: "og:title", content: "Pragma — Meeting & Email Simulators" },
-      { property: "og:description", content: "Rehearse high-stakes meetings and difficult emails in a controlled simulator. Build confidence before the real conversation." },
+      { title: "MeetCalc & MailCalc — Calculadoras de coste de reuniones y emails" },
+      { name: "description", content: "Dos simuladores para poner en euros lo que cuestan las reuniones y los hilos de email de tu equipo." },
+      { name: "author", content: "MeetCalc" },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
-      { name: "twitter:site", content: "@Pragma" },
     ],
     links: [
       { rel: "preconnect", href: "https://fonts.googleapis.com" },
