@@ -7,6 +7,9 @@ const MEETING_IMAGE =
 const EMAIL_IMAGE =
   "https://images.unsplash.com/photo-1507208773393-40d9fc670acf?auto=format&fit=crop&w=900&q=80";
 
+const MEET_URL = "https://meetcalc.onrender.com/simulador-coste-reuniones.html?lang=es";
+const MAIL_URL = "https://meetcalc.onrender.com/simulador-coste-hilos-email.html?lang=es";
+
 const TITLE = "MeetCalc & MailCalc — El tiempo de tu equipo también tiene precio";
 const DESCRIPTION =
   "Dos simuladores para poner en euros lo que cuestan las reuniones y los hilos de email. Perfiles, asistentes y minutos convertidos en un número que se entiende en cualquier comité.";
@@ -44,7 +47,7 @@ const SIMULATORS = [
     chips: ["Asistentes", "Duración", "Retraso", "Presencial / remota"],
     image: MEETING_IMAGE,
     alt: "Personas reunidas en una sala de reuniones",
-    href: "https://meetcalc.onrender.com/simulador-coste-reuniones.html?lang=es",
+    href: MEET_URL,
   },
   {
     tag: "Hilos de email",
@@ -53,7 +56,7 @@ const SIMULATORS = [
     chips: ["Para / CC", "Nº de emails", "Palabras por email", "Atención en CC"],
     image: EMAIL_IMAGE,
     alt: "Persona escribiendo un email en el portátil",
-    href: "https://meetcalc.onrender.com/simulador-coste-hilos-email.html?lang=es",
+    href: MAIL_URL,
   },
 ];
 
@@ -135,7 +138,7 @@ function Index() {
             </p>
             <div className="flex flex-wrap items-center gap-4">
               <a
-                href={SIMULATORS[0].href}
+                href={MEET_URL}
                 className="flex items-center gap-2 rounded-md bg-navy-950 py-2 pl-2 pr-3 text-sm font-medium text-navy-50 ring-1 ring-navy-950 transition-colors hover:bg-navy-800"
               >
                 <svg
@@ -149,7 +152,7 @@ function Index() {
                 Calcular una reunión
               </a>
               <a
-                href={SIMULATORS[1].href}
+                href={MAIL_URL}
                 className="rounded-md bg-navy-950/5 px-4 py-2 text-sm font-medium text-navy-950 ring-1 ring-black/5 transition-colors hover:bg-navy-950/10"
               >
                 Calcular un hilo de emails
@@ -343,13 +346,13 @@ function Index() {
           </div>
           <div className="flex gap-6">
             <a
-              href={SIMULATORS[0].href}
+              href={MEET_URL}
               className="text-xs font-medium text-navy-800/60 transition-colors hover:text-navy-950"
             >
               Simulador de reuniones
             </a>
             <a
-              href={SIMULATORS[1].href}
+              href={MAIL_URL}
               className="text-xs font-medium text-navy-800/60 transition-colors hover:text-navy-950"
             >
               Simulador de hilos de email
