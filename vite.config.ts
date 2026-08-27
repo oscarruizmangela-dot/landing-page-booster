@@ -9,7 +9,7 @@ import { defineConfig } from "@lovable.dev/vite-tanstack-config";
 export default defineConfig({
   // Permite compilar para un servidor Node (Render) con NITRO_PRESET=node_server
   ...(process.env["NITRO_PRESET"]
-    ? { nitro: { config: { preset: process.env["NITRO_PRESET"] } } }
+    ? { nitro: { preset: process.env["NITRO_PRESET"] } }
     : {}),
   tanstackStart: {
     // Redirect TanStack Start's bundled server entry to src/server.ts (our SSR error wrapper).
